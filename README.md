@@ -1,21 +1,20 @@
-# Md Abid Hasan — Portfolio V3
+# Abid Hasan — Portfolio V5
 
-## V3 updates
-- Updated typography: Sora headings, Inter body text, IBM Plex Mono metadata.
-- Larger, higher-contrast text across desktop and mobile.
-- Seamless infinite marquee built from three identical tracks; pauses on hover.
-- Three project cards per row on wide desktop, two on tablet and one on small phones.
-- Taller project preview windows with hover-based full-page scrolling.
-- Removed education history, university details and employer history.
-- Replaced timeline with professional focus: website development, e-commerce and ongoing support.
-- Added GSAP + ScrollTrigger for section reveals, hero typography and ambient movement.
-- Retained the original uploaded portrait and existing project/contact interactions.
+## What changed in V5
+- Rebuilt the hero section around Abid Hasan's transparent portrait.
+- Added floating technology badges around the hero image.
+- Enlarged homepage messaging and kept the dark premium direction.
+- Replaced demo projects with six real live websites and their full-page screenshots.
+- Added direct live links for each project.
+- Added a floating Messenger button using `https://m.me/abid.hasan.588630`.
+- Kept the direct contact form submission setup for `abidbest21@gmail.com`.
 
-## Preview
-Open `index.html` in a modern browser. Google Fonts and GSAP are loaded from CDNs, so internet access is required for those enhancements.
+## Included assets
+- Transparent profile image in `assets/abid-hasan-original.png`
+- Six real project screenshots in the `assets` folder
 
-## Demo project disclosure
-NOVA, FORME, PULSE and SAFFRON are illustrative concepts, not represented as completed client projects. Replace them with genuine screenshots, project roles and live URLs before presenting them as client case studies.
+## Update on GitHub
+Upload the contents of this folder to your `abidhasandev.github.io` repository and replace the old files.
 
-## Contact form
-The form opens the visitor's email application with a pre-filled message to `abidfor21@gmail.com`. It does not store submissions on a server.
+## Contact form note
+The form uses FormSubmit AJAX. After publishing, submit one test message and confirm/activate the FormSubmit email if they send an activation email to `abidbest21@gmail.com`.
