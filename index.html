@@ -6,6 +6,7 @@
 <meta name="theme-color" content="#08090d">
 <meta name="description" content="Abid Hasan — Web Developer Portfolio. WordPress, Shopify, custom websites, bug fixing, SEO, product listing and website support.">
 <title>Abid Hasan — Web Developer Portfolio</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -150,6 +151,59 @@ body,p,a,button,input,textarea,label,li {
 @media(max-width:900px){.hero-v5{min-height:auto;padding-top:115px}.hero-visual{min-height:560px}.hero-visual-bg{inset:60px 10px 30px}.hero-rings:before{width:380px;height:380px;right:40px;top:95px}.hero-rings:after{width:260px;height:260px;right:90px;top:150px}.hero-main-image{max-height:560px}.floating-badge{padding:8px 10px}.floating-badge b{font-size:10px}.project-links{align-items:flex-start;flex-direction:column}}
 @media(max-width:650px){.hero-v5{padding-top:98px;padding-bottom:56px}.hero-v5-wrap{gap:24px}.hero-v5-title{font-size:clamp(42px,13.4vw,66px)}.hero-v5-intro{font-size:16px;line-height:1.82}.hero-visual{min-height:470px}.hero-main-image{max-height:450px}.hero-visual-bg{inset:70px 0 18px}.hero-rings:before{width:280px;height:280px;right:18px;top:110px}.hero-rings:after{width:200px;height:200px;right:58px;top:150px}.floating-badge{transform:scale(.92)}.floating-badge span{min-width:28px;height:28px;font-size:11px}.floating-badge.b1{top:78px;left:0}.floating-badge.b2{top:114px;right:0}.floating-badge.b3{top:214px;left:0}.floating-badge.b4{bottom:138px;left:0}.floating-badge.b5{bottom:104px;right:0}.floating-badge.b6{bottom:30px;left:40px}.floating-badge.b7{top:172px;right:0}.floating-badge.b8{bottom:26px;right:52px}.project-summary{font-size:14px}.messenger-text{display:none}.floating-messenger{padding:12px}.messenger-icon{width:38px;height:38px}}
 
+
+/* V6 hero redesign */
+.hero-v6{position:relative;padding:128px 0 78px;min-height:880px;overflow:hidden}
+.hero-v6:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 42%,rgba(94,73,255,.16),transparent 24%),radial-gradient(circle at 84% 66%,rgba(214,255,89,.10),transparent 22%);pointer-events:none}
+.hero-v6-bg-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(180deg,rgba(0,0,0,.85),rgba(0,0,0,.22));pointer-events:none}
+.hero-v6-bg-glow{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none}.hero-v6-bg-glow.glow-a{width:340px;height:340px;background:rgba(102,88,255,.18);right:14%;top:18%}.hero-v6-bg-glow.glow-b{width:280px;height:280px;background:rgba(193,255,54,.12);right:6%;bottom:11%}
+.hero-v6-diagonal{position:absolute;right:-8%;top:11%;width:42vw;min-width:460px;height:68%;border-radius:46px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.06);transform:skewX(-16deg);opacity:.72;box-shadow:0 40px 100px rgba(0,0,0,.28)}
+.hero-v6-wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,.82fr) minmax(420px,1.18fr);gap:28px;align-items:center}
+.hero-v6-left{max-width:560px}
+.hero-v6-kicker{display:inline-block;font:700 12px/1.4 "Inter",sans-serif;letter-spacing:1.25px;color:#c4cad5;margin-bottom:18px}
+.hero-v6-title{margin:0;font:800 clamp(52px,7vw,98px)/.92 "Sora",sans-serif;letter-spacing:-.065em;text-transform:uppercase}
+.hero-v6-title span{display:block}.hero-v6-title .outline{-webkit-text-stroke:1.6px rgba(235,240,248,.62);color:transparent}.hero-v6-title .lime-text{color:var(--lime)}
+.hero-v6-intro{max-width:510px;margin:20px 0 0;font:500 18px/1.9 "Inter",sans-serif;color:#b5bdc9}
+.hero-v6-actions{display:flex;align-items:center;gap:18px;margin-top:28px}
+.hero-v6-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.hero-v6-chips span{padding:10px 13px;border-radius:999px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);font:700 11px/1 "Inter",sans-serif;letter-spacing:.7px;color:#dae0ea}
+.hero-v6-right{position:relative}
+.hero-v6-stage{position:relative;min-height:710px;display:flex;align-items:flex-end;justify-content:center}
+.hero-v6-card{position:absolute;inset:70px 16px 38px;border-radius:38px;background:linear-gradient(145deg,rgba(10,14,23,.76),rgba(14,20,32,.92));border:1px solid rgba(255,255,255,.08);box-shadow:0 46px 90px rgba(0,0,0,.34),inset 0 1px 0 rgba(255,255,255,.05)}
+.hero-v6-radial{position:absolute;inset:auto auto 84px auto;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(214,255,89,.08),transparent 62%);z-index:1}
+.hero-v6-image{position:relative;z-index:3;max-height:700px;max-width:100%;object-fit:contain;filter:drop-shadow(0 30px 55px rgba(0,0,0,.42))}
+.orbit-set{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;display:grid;place-items:center}
+.orbit{position:relative;border-radius:50%;border:1px solid rgba(214,255,89,.18);animation:orbitSpin 24s linear infinite}
+.orbit-1{width:430px;height:430px}.orbit-2{width:575px;height:575px;animation-duration:34s}
+.orbit:before{content:"";position:absolute;inset:22px;border-radius:50%;border:1px dashed rgba(255,255,255,.05)}
+.orbit-icon{position:absolute;display:flex;align-items:center;justify-content:center;min-width:56px;height:56px;padding:0 18px;border-radius:999px;background:rgba(10,14,23,.92);border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 32px rgba(0,0,0,.26)}
+.orbit-icon span{font:800 11px/1 "Inter",sans-serif;letter-spacing:.65px;color:#eef2f8}
+.orbit-1 .icon-top{top:-28px;left:50%;transform:translateX(-50%)}.orbit-1 .icon-right{right:-28px;top:50%;transform:translateY(-50%)}.orbit-1 .icon-bottom{bottom:-28px;left:50%;transform:translateX(-50%)}.orbit-1 .icon-left{left:-28px;top:50%;transform:translateY(-50%)}
+.orbit-2 .icon-top{top:-28px;left:50%;transform:translateX(-50%)}.orbit-2 .icon-right{right:-44px;top:50%;transform:translateY(-50%)}.orbit-2 .icon-bottom{bottom:-28px;left:50%;transform:translateX(-50%)}.orbit-2 .icon-left{left:-44px;top:50%;transform:translateY(-50%)}
+@keyframes orbitSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@media(max-width:1250px){.hero-v6-wrap{grid-template-columns:1fr}.hero-v6-left{max-width:680px}.hero-v6-right{max-width:780px;margin:0 auto}.hero-v6-stage{min-height:640px}.hero-v6-diagonal{right:-18%;top:16%;width:58vw;height:55%}}
+@media(max-width:900px){.hero-v6{padding-top:108px;min-height:auto}.hero-v6-wrap{gap:14px}.hero-v6-title{font-size:clamp(46px,9vw,82px)}.hero-v6-intro{font-size:17px}.hero-v6-stage{min-height:560px}.hero-v6-card{inset:62px 0 32px}.hero-v6-image{max-height:550px}.orbit-1{width:330px;height:330px}.orbit-2{width:450px;height:450px}.hero-v6-radial{width:360px;height:360px;bottom:76px}.orbit-icon{min-width:50px;height:50px;padding:0 12px}.orbit-icon span{font-size:10px}.orbit-2 .icon-right,.orbit-2 .icon-left{right:-28px;left:auto}.orbit-2 .icon-left{left:-28px;right:auto}}
+@media(max-width:650px){.hero-v6{padding:94px 0 54px}.hero-v6-left{max-width:none}.hero-v6-kicker{font-size:10px;letter-spacing:1px}.hero-v6-title{font-size:clamp(40px,13vw,58px)}.hero-v6-intro{font-size:16px;line-height:1.8}.hero-v6-actions{gap:14px;flex-wrap:wrap}.hero-v6-chips{margin-top:18px}.hero-v6-stage{min-height:440px}.hero-v6-card{inset:52px 0 16px;border-radius:28px}.hero-v6-image{max-height:405px}.orbit-1{width:250px;height:250px}.orbit-2{width:340px;height:340px}.orbit-icon{min-width:42px;height:42px;padding:0 8px}.orbit-icon span{font-size:9px}.orbit-1 .icon-right,.orbit-1 .icon-left{right:-20px;left:auto}.orbit-1 .icon-left{left:-20px;right:auto}.orbit-2 .icon-right,.orbit-2 .icon-left{right:-18px;left:auto}.orbit-2 .icon-left{left:-18px;right:auto}.hero-v6-diagonal{display:none}.hero-v6-radial{width:280px;height:280px;bottom:52px}}
+
+
+/* V7 refinements */
+.hero-v7{position:relative;padding:124px 0 74px;min-height:860px;overflow:hidden}
+.hero-v7-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(180deg,rgba(0,0,0,.9),rgba(0,0,0,.35));pointer-events:none}
+.hero-v7-glow{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}.hero-v7-glow.glow-a{width:330px;height:330px;background:rgba(104,91,255,.14);right:10%;top:18%}.hero-v7-glow.glow-b{width:240px;height:240px;background:rgba(214,255,89,.10);right:14%;bottom:18%}
+.hero-v7-lines{position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(180deg,transparent,rgba(112,88,255,.04) 50%,transparent);pointer-events:none}
+.hero-v7-wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,.84fr) minmax(420px,1.16fr);gap:34px;align-items:center}
+.hero-v7-left{max-width:560px}.hero-v7-kicker{display:inline-block;margin-bottom:16px;font:700 12px/1.4 "Inter",sans-serif;letter-spacing:1.2px;color:#c5ccd7}.hero-v7-title{margin:0;font:800 clamp(56px,7vw,100px)/.92 "Sora",sans-serif;letter-spacing:-.065em;text-transform:uppercase}.hero-v7-title span{display:block}.hero-v7-title .outline{-webkit-text-stroke:1.6px rgba(232,238,247,.6);color:transparent}.hero-v7-intro{max-width:510px;margin:18px 0 0;font:500 18px/1.9 "Inter",sans-serif;color:#b6becc}.hero-v7-actions{display:flex;align-items:center;gap:18px;margin-top:28px}.hero-v7-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.hero-v7-chips span{padding:10px 13px;border-radius:999px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);font:700 11px/1 "Inter",sans-serif;letter-spacing:.7px;color:#d9e0ea}
+.hero-v7-right{position:relative}.hero-v7-stage{position:relative;min-height:700px;display:flex;align-items:flex-end;justify-content:center}.hero-v7-center-glow{position:absolute;width:430px;height:430px;border-radius:50%;background:radial-gradient(circle,rgba(214,255,89,.11),transparent 62%);top:50%;left:50%;transform:translate(-50%,-50%);z-index:1}.hero-v7-image{position:relative;z-index:3;max-height:700px;max-width:100%;object-fit:contain;filter:drop-shadow(0 30px 55px rgba(0,0,0,.4))}
+.hero-v7-orbit{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(214,255,89,.18);z-index:2}.hero-v7-orbit:before{content:"";position:absolute;inset:18px;border-radius:50%;border:1px dashed rgba(255,255,255,.06)}.orbit-one{width:430px;height:430px;animation:orbitSpin 24s linear infinite}.orbit-two{width:575px;height:575px;animation:orbitSpinReverse 34s linear infinite}
+.orbit-logo{position:absolute;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:rgba(9,13,21,.96);border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 32px rgba(0,0,0,.28)}.orbit-logo i,.orbit-logo svg{font-size:26px;color:#eff4fb;width:26px;height:26px}.orbit-logo.pos-top{top:-28px;left:50%;transform:translateX(-50%)}.orbit-logo.pos-right{right:-28px;top:50%;transform:translateY(-50%)}.orbit-logo.pos-bottom{bottom:-28px;left:50%;transform:translateX(-50%)}.orbit-logo.pos-left{left:-28px;top:50%;transform:translateY(-50%)}
+@keyframes orbitSpin{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes orbitSpinReverse{from{transform:translate(-50%,-50%) rotate(360deg)}to{transform:translate(-50%,-50%) rotate(0deg)}}
+.project-meta{align-items:flex-start}.project-type{margin-bottom:10px}.project-summary.lead-copy{margin-top:10px;margin-bottom:12px;color:#d3d9e3;font-size:15px;line-height:1.7}.project-summary{font-size:14px;line-height:1.75;color:#aeb6c3;margin-top:0}.project-links{margin-top:18px}.project-links .single-cta{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;background:transparent;border:1px solid rgba(214,255,89,.35);color:var(--lime);font-size:12px;font-weight:800;letter-spacing:.75px;text-transform:uppercase}.project-links .single-cta:hover{background:var(--lime);color:#09100d;border-color:var(--lime)}.live-link-inline,.real-tag{display:none!important}
+.about-photo-box{background:rgba(255,255,255,.02);border:1px solid rgba(84,126,255,.55)}.about-photo{object-fit:cover}
+.floating-messenger{position:fixed;right:18px;bottom:20px;z-index:70;display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#00b2ff,#645bff);color:#fff;box-shadow:0 20px 45px rgba(0,0,0,.32);border:1px solid rgba(255,255,255,.18)}.floating-messenger svg{width:26px;height:26px}.messenger-icon,.messenger-text{display:none!important}
+@media(max-width:1200px){.hero-v7-wrap{grid-template-columns:1fr}.hero-v7-right{max-width:760px;margin:0 auto}.hero-v7-stage{min-height:620px}}
+@media(max-width:900px){.hero-v7{padding-top:108px;min-height:auto}.hero-v7-title{font-size:clamp(48px,9vw,86px)}.hero-v7-intro{font-size:17px}.hero-v7-stage{min-height:560px}.orbit-one{width:330px;height:330px}.orbit-two{width:450px;height:450px}.hero-v7-center-glow{width:330px;height:330px}.hero-v7-image{max-height:560px}.orbit-logo{width:50px;height:50px}.orbit-logo i,.orbit-logo svg{font-size:22px;width:22px;height:22px}}
+@media(max-width:650px){.hero-v7{padding:96px 0 54px}.hero-v7-title{font-size:clamp(40px,13vw,60px)}.hero-v7-intro{font-size:16px;line-height:1.8}.hero-v7-actions{gap:14px;flex-wrap:wrap}.hero-v7-stage{min-height:430px}.orbit-one{width:250px;height:250px}.orbit-two{width:340px;height:340px}.hero-v7-center-glow{width:250px;height:250px}.hero-v7-image{max-height:405px}.orbit-logo{width:42px;height:42px}.orbit-logo i,.orbit-logo svg{font-size:18px;width:18px;height:18px}.orbit-logo.pos-top{top:-21px}.orbit-logo.pos-right{right:-21px}.orbit-logo.pos-bottom{bottom:-21px}.orbit-logo.pos-left{left:-21px}.floating-messenger{width:54px;height:54px;right:14px;bottom:16px}}
+
 </style>
 </head>
 <body>
@@ -162,31 +216,49 @@ body,p,a,button,input,textarea,label,li {
 <div class="nav-right"><span class="availability">AVAILABLE FOR WORK</span><a class="nav-contact" href="#contact">LET'S TALK ↗</a><button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button></div>
 </div></header>
 <main>
-<section class="hero hero-v5" id="home">
-<div class="hero-grid"></div><div class="hero-orb"></div><div class="hero-noise"></div>
-<div class="wrap hero-wrap hero-v5-wrap">
-<div class="hero-left reveal">
-  <div class="hero-kicker-row"><span class="eyebrow">WEB DEVELOPER · WORDPRESS · SHOPIFY · CUSTOM WEBSITES</span></div>
-  <h1 class="hero-title hero-v5-title"><span class="line"><span>ABID HASAN</span></span><span class="line"><span class="outline">DESIGNS & BUILDS</span></span><span class="line"><span class="lime-text">WEBSITES THAT WORK.</span></span></h1>
-  <p class="hero-intro hero-v5-intro">I build business websites, Shopify stores and custom web solutions that look premium, work smoothly and help brands present themselves better online.</p>
-  <div class="hero-actions"><a class="pill-btn magnetic" href="#work">VIEW PROJECTS <span>↗</span></a><a class="text-link" href="#contact">HIRE ME</a></div>
-  <div class="hero-mini-points"><span>WORDPRESS</span><span>SHOPIFY</span><span>LARAVEL</span><span>SEO</span><span>BUG FIXING</span><span>CLOUD & AI TOOLS</span></div>
-</div>
-<div class="hero-visual reveal" data-cursor="VIEW">
-  <div class="hero-visual-bg"></div>
-  <div class="hero-rings"></div>
-  <img class="hero-main-image" src="assets/abid-hasan-original.png" alt="Abid Hasan transparent portrait">
-  <div class="floating-badge b1"><span>WP</span><b>WORDPRESS</b></div>
-  <div class="floating-badge b2"><span>S</span><b>SHOPIFY</b></div>
-  <div class="floating-badge b3"><span>L</span><b>LARAVEL</b></div>
-  <div class="floating-badge b4"><span>{ }</span><b>CUSTOM CODE</b></div>
-  <div class="floating-badge b5"><span>AI</span><b>AI AUTOMATION</b></div>
-  <div class="floating-badge b6"><span>☁</span><b>CLOUD</b></div>
-  <div class="floating-badge b7"><span>JS</span><b>JAVASCRIPT</b></div>
-  <div class="floating-badge b8"><span>PHP</span><b>PHP</b></div>
-</div>
-<div class="hero-side-note reveal"><strong>AVAILABLE FOR FREELANCE</strong><span>Web Design · Development · E-commerce · Optimization</span></div>
-</div>
+<section class="hero hero-v7" id="home">
+  <div class="hero-v7-grid"></div>
+  <div class="hero-v7-glow glow-a"></div>
+  <div class="hero-v7-glow glow-b"></div>
+  <div class="hero-v7-lines"></div>
+  <div class="wrap hero-v7-wrap">
+    <div class="hero-v7-left reveal">
+      <span class="hero-v7-kicker">WORDPRESS · SHOPIFY · LARAVEL · CUSTOM DEVELOPMENT</span>
+      <h1 class="hero-v7-title">
+        <span>PREMIUM</span>
+        <span class="outline">WEB</span>
+        <span class="lime-text">SOLUTIONS</span>
+      </h1>
+      <p class="hero-v7-intro">I design and develop modern business websites, e-commerce stores and custom web solutions that look professional and work smoothly.</p>
+      <div class="hero-v7-actions">
+        <a class="pill-btn magnetic" href="#work">VIEW PROJECTS <span>↗</span></a>
+        <a class="text-link" href="#contact">HIRE ME</a>
+      </div>
+      <div class="hero-v7-chips">
+        <span>WEB DESIGN</span>
+        <span>E-COMMERCE</span>
+        <span>BUG FIXING</span>
+      </div>
+    </div>
+    <div class="hero-v7-right reveal">
+      <div class="hero-v7-stage">
+        <div class="hero-v7-orbit orbit-one">
+          <div class="orbit-logo pos-top"><i class="devicon-wordpress-plain"></i></div>
+          <div class="orbit-logo pos-right"><i class="devicon-javascript-plain"></i></div>
+          <div class="orbit-logo pos-bottom"><i class="devicon-php-plain"></i></div>
+          <div class="orbit-logo pos-left"><i class="devicon-laravel-plain"></i></div>
+        </div>
+        <div class="hero-v7-orbit orbit-two">
+          <div class="orbit-logo pos-top"><i class="devicon-shopify-plain"></i></div>
+          <div class="orbit-logo pos-right"><i class="devicon-github-original"></i></div>
+          <div class="orbit-logo pos-bottom"><i class="devicon-html5-plain"></i></div>
+          <div class="orbit-logo pos-left"><i class="devicon-cloudflare-plain"></i></div>
+        </div>
+        <div class="hero-v7-center-glow"></div>
+        <img class="hero-v7-image" src="assets/abid-hasan-original.png" alt="Abid Hasan portrait">
+      </div>
+    </div>
+  </div>
 </section>
 <div class="marquee" aria-label="Areas of expertise"><div class="marquee-track">
 <div class="marquee-group"><span>WORDPRESS DEVELOPMENT</span><b>✳</b><span>SHOPIFY & E-COMMERCE</span><b>✳</b><span>CUSTOM WEBSITES</span><b>✳</b><span>SEO & OPTIMIZATION</span><b>✳</b><span>WEB MAINTENANCE</span><b>✳</b></div>
@@ -210,29 +282,29 @@ body,p,a,button,input,textarea,label,li {
 <div class="work-heading reveal"><div><div class="section-num">02 — SELECTED WORK</div><h2 class="section-title">REAL CLIENT<br>PROJECTS <span class="muted">I'VE BUILT.</span></h2></div><p class="section-aside">These are live projects from different industries. Hover a card to preview the full page slowly scrolling, then open the live website.</p></div>
 <div class="project-list"><article class="project-card reveal real-project-card" data-title="Canadian Peptides Solutions" data-kind="E-COMMERCE" data-desc="A product-focused e-commerce website with a clean catalog layout, informational content blocks and trust-building visuals.">
 <div class="project-preview" data-cursor="SCROLL PREVIEW"><div class="browser-top"><i></i><i></i><i></i><span>canadianpeptidesolutions.com</span></div><div class="site-capture"><img class="project-shot" src="assets/canadian-peptides.png" alt="Full-page screenshot of Canadian Peptides Solutions"></div></div>
-<div class="project-meta"><div><div class="project-type">01 / E-COMMERCE</div><h3 class="project-title">Canadian Peptides Solutions</h3></div><a class="project-arrow live-link-inline" href="https://canadianpeptidesolutions.com/" target="_blank" rel="noopener">↗</a></div>
-<p class="project-caption">Medical product e-commerce website · WordPress / WooCommerce</p><p class="project-summary">A product-focused e-commerce website with a clean catalog layout, informational content blocks and trust-building visuals.</p><div class="project-links"><span class="real-tag">REAL PROJECT</span><a class="project-visit" href="https://canadianpeptidesolutions.com/" target="_blank" rel="noopener">VISIT WEBSITE ↗</a></div></article><article class="project-card reveal real-project-card" data-title="Dynamix Scaffold Group" data-kind="CORPORATE" data-desc="A bold corporate website for a scaffold and access solutions company, with strong service hierarchy and lead-focused sections.">
+<div class="project-meta"><div><div class="project-type">01 / E-COMMERCE</div><h3 class="project-title">Canadian Peptides Solutions</h3></div></div>
+<p class="project-summary lead-copy"></p><p class="project-summary">A product-focused e-commerce website with a clean catalog layout, informational content blocks and trust-building visuals.</p><div class="project-links"><a class="project-visit single-cta" href="https://canadianpeptidesolutions.com/" target="_blank" rel="noopener">VIEW WEBSITE ↗</a></div></article><article class="project-card reveal real-project-card" data-title="Dynamix Scaffold Group" data-kind="CORPORATE" data-desc="A bold corporate website for a scaffold and access solutions company, with strong service hierarchy and lead-focused sections.">
 <div class="project-preview" data-cursor="SCROLL PREVIEW"><div class="browser-top"><i></i><i></i><i></i><span>dynamixscaffold.com</span></div><div class="site-capture"><img class="project-shot" src="assets/dynamix-scaffold.png" alt="Full-page screenshot of Dynamix Scaffold Group"></div></div>
-<div class="project-meta"><div><div class="project-type">02 / CORPORATE</div><h3 class="project-title">Dynamix Scaffold Group</h3></div><a class="project-arrow live-link-inline" href="https://dynamixscaffold.com/" target="_blank" rel="noopener">↗</a></div>
-<p class="project-caption">Construction company website · Corporate service presentation</p><p class="project-summary">A bold corporate website for a scaffold and access solutions company, with strong service hierarchy and lead-focused sections.</p><div class="project-links"><span class="real-tag">LIVE WEBSITE</span><a class="project-visit" href="https://dynamixscaffold.com/" target="_blank" rel="noopener">VISIT WEBSITE ↗</a></div></article><article class="project-card reveal real-project-card" data-title="Lifestyles Experience" data-kind="LUXURY BOOKING" data-desc="A dark luxury website experience designed to highlight premium transport services and communicate exclusivity.">
+<div class="project-meta"><div><div class="project-type">02 / CORPORATE</div><h3 class="project-title">Dynamix Scaffold Group</h3></div></div>
+<p class="project-summary lead-copy"></p><p class="project-summary">A bold corporate website for a scaffold and access solutions company, with strong service hierarchy and lead-focused sections.</p><div class="project-links"><a class="project-visit single-cta" href="https://dynamixscaffold.com/" target="_blank" rel="noopener">VIEW WEBSITE ↗</a></div></article><article class="project-card reveal real-project-card" data-title="Lifestyles Experience" data-kind="LUXURY BOOKING" data-desc="A dark luxury website experience designed to highlight premium transport services and communicate exclusivity.">
 <div class="project-preview" data-cursor="SCROLL PREVIEW"><div class="browser-top"><i></i><i></i><i></i><span>lifestylesexp.com</span></div><div class="site-capture"><img class="project-shot" src="assets/lifestyles-experience.png" alt="Full-page screenshot of Lifestyles Experience"></div></div>
-<div class="project-meta"><div><div class="project-type">03 / LUXURY BOOKING</div><h3 class="project-title">Lifestyles Experience</h3></div><a class="project-arrow live-link-inline" href="https://lifestylesexp.com/" target="_blank" rel="noopener">↗</a></div>
-<p class="project-caption">Luxury transport website · Premium brand presentation</p><p class="project-summary">A dark luxury website experience designed to highlight premium transport services and communicate exclusivity.</p><div class="project-links"><span class="real-tag">LIVE WEBSITE</span><a class="project-visit" href="https://lifestylesexp.com/" target="_blank" rel="noopener">VISIT WEBSITE ↗</a></div></article><article class="project-card reveal real-project-card" data-title="We Kleen" data-kind="SERVICE BUSINESS" data-desc="A trust-focused service website with a strong brand tone, clear process explanation and multiple conversion points.">
+<div class="project-meta"><div><div class="project-type">03 / LUXURY BOOKING</div><h3 class="project-title">Lifestyles Experience</h3></div></div>
+<p class="project-summary lead-copy"></p><p class="project-summary">A dark luxury website experience designed to highlight premium transport services and communicate exclusivity.</p><div class="project-links"><a class="project-visit single-cta" href="https://lifestylesexp.com/" target="_blank" rel="noopener">VIEW WEBSITE ↗</a></div></article><article class="project-card reveal real-project-card" data-title="We Kleen" data-kind="SERVICE BUSINESS" data-desc="A trust-focused service website with a strong brand tone, clear process explanation and multiple conversion points.">
 <div class="project-preview" data-cursor="SCROLL PREVIEW"><div class="browser-top"><i></i><i></i><i></i><span>wekleenllc.com</span></div><div class="site-capture"><img class="project-shot" src="assets/we-kleen.png" alt="Full-page screenshot of We Kleen"></div></div>
-<div class="project-meta"><div><div class="project-type">04 / SERVICE BUSINESS</div><h3 class="project-title">We Kleen</h3></div><a class="project-arrow live-link-inline" href="https://wekleenllc.com/" target="_blank" rel="noopener">↗</a></div>
-<p class="project-caption">Janitorial service website · Professional local business site</p><p class="project-summary">A trust-focused service website with a strong brand tone, clear process explanation and multiple conversion points.</p><div class="project-links"><span class="real-tag">LIVE WEBSITE</span><a class="project-visit" href="https://wekleenllc.com/" target="_blank" rel="noopener">VISIT WEBSITE ↗</a></div></article><article class="project-card reveal real-project-card" data-title="Conmas" data-kind="CREATIVE BRAND" data-desc="A visually rich creative website with strong atmosphere, content sections and an immersive entertainment brand identity.">
+<div class="project-meta"><div><div class="project-type">04 / SERVICE BUSINESS</div><h3 class="project-title">We Kleen</h3></div></div>
+<p class="project-summary lead-copy"></p><p class="project-summary">A trust-focused service website with a strong brand tone, clear process explanation and multiple conversion points.</p><div class="project-links"><a class="project-visit single-cta" href="https://wekleenllc.com/" target="_blank" rel="noopener">VIEW WEBSITE ↗</a></div></article><article class="project-card reveal real-project-card" data-title="Conmas" data-kind="CREATIVE BRAND" data-desc="A visually rich creative website with strong atmosphere, content sections and an immersive entertainment brand identity.">
 <div class="project-preview" data-cursor="SCROLL PREVIEW"><div class="browser-top"><i></i><i></i><i></i><span>conmas.us</span></div><div class="site-capture"><img class="project-shot" src="assets/conmas.png" alt="Full-page screenshot of Conmas"></div></div>
-<div class="project-meta"><div><div class="project-type">05 / CREATIVE BRAND</div><h3 class="project-title">Conmas</h3></div><a class="project-arrow live-link-inline" href="https://conmas.us/" target="_blank" rel="noopener">↗</a></div>
-<p class="project-caption">Creative storytelling website · Entertainment / media</p><p class="project-summary">A visually rich creative website with strong atmosphere, content sections and an immersive entertainment brand identity.</p><div class="project-links"><span class="real-tag">LIVE WEBSITE</span><a class="project-visit" href="https://conmas.us/" target="_blank" rel="noopener">VISIT WEBSITE ↗</a></div></article><article class="project-card reveal real-project-card" data-title="Zagarx" data-kind="MEDICAL PROCUREMENT" data-desc="A clean, trustworthy medical procurement site built to present categories, compliance and partner information clearly.">
+<div class="project-meta"><div><div class="project-type">05 / CREATIVE BRAND</div><h3 class="project-title">Conmas</h3></div></div>
+<p class="project-summary lead-copy"></p><p class="project-summary">A visually rich creative website with strong atmosphere, content sections and an immersive entertainment brand identity.</p><div class="project-links"><a class="project-visit single-cta" href="https://conmas.us/" target="_blank" rel="noopener">VIEW WEBSITE ↗</a></div></article><article class="project-card reveal real-project-card" data-title="Zagarx" data-kind="MEDICAL PROCUREMENT" data-desc="A clean, trustworthy medical procurement site built to present categories, compliance and partner information clearly.">
 <div class="project-preview" data-cursor="SCROLL PREVIEW"><div class="browser-top"><i></i><i></i><i></i><span>zagarx.com</span></div><div class="site-capture"><img class="project-shot" src="assets/zagarx.png" alt="Full-page screenshot of Zagarx"></div></div>
-<div class="project-meta"><div><div class="project-type">06 / MEDICAL PROCUREMENT</div><h3 class="project-title">Zagarx</h3></div><a class="project-arrow live-link-inline" href="https://zagarx.com/" target="_blank" rel="noopener">↗</a></div>
-<p class="project-caption">Medical supply website · Procurement and category showcase</p><p class="project-summary">A clean, trustworthy medical procurement site built to present categories, compliance and partner information clearly.</p><div class="project-links"><span class="real-tag">LIVE WEBSITE</span><a class="project-visit" href="https://zagarx.com/" target="_blank" rel="noopener">VISIT WEBSITE ↗</a></div></article></div>
+<div class="project-meta"><div><div class="project-type">06 / MEDICAL PROCUREMENT</div><h3 class="project-title">Zagarx</h3></div></div>
+<p class="project-summary lead-copy"></p><p class="project-summary">A clean, trustworthy medical procurement site built to present categories, compliance and partner information clearly.</p><div class="project-links"><a class="project-visit single-cta" href="https://zagarx.com/" target="_blank" rel="noopener">VIEW WEBSITE ↗</a></div></article></div>
 </div></section>
 
 <section class="section" id="about"><div class="wrap">
 <div class="section-top reveal"><div><div class="section-num">03 — WHY CLIENTS WORK WITH ME</div><h2 class="section-title">PRACTICAL WEB<br>SOLUTIONS <span class="muted">WITH STYLE.</span></h2></div><p class="section-aside">I combine design sense, development skills and practical business thinking to build websites people can trust.</p></div>
 <div class="about-grid">
-<div class="about-photo-box reveal"><img class="about-photo" src="assets/abid-hasan-original.png" alt="Original professional portrait of Md Abid Hasan"><span class="about-photo-tag">MD ABID HASAN / 2026</span></div>
+<div class="about-photo-box reveal"><img class="about-photo" src="assets/abid-hasan-studio.png" alt="Professional portrait of Md Abid Hasan"><span class="about-photo-tag">MD ABID HASAN / 2026</span></div>
 <div class="about-copy reveal"><p class="lead">I like websites that look good, feel simple to use and make everyday work easier.</p><p>I work with businesses that need a new website, a better online store or help sorting out a site they already have.</p><p>My work includes WordPress, WooCommerce, Shopify and custom websites, along with product uploads, SEO, bug fixing and website maintenance.</p><p>I keep the process straightforward, explain what needs to be done and build sites that are easy for you to update and manage.</p>
 <div class="skill-cloud"><span class="skill-chip">WORDPRESS</span><span class="skill-chip">SHOPIFY</span><span class="skill-chip">WOOCOMMERCE</span><span class="skill-chip">CUSTOM DEVELOPMENT</span><span class="skill-chip">FRONT-END</span><span class="skill-chip">BACK-END</span><span class="skill-chip">API INTEGRATION</span><span class="skill-chip">SEO</span><span class="skill-chip">WEBSITE SECURITY</span><span class="skill-chip">DATABASES</span><span class="skill-chip">WEB HOSTING</span><span class="skill-chip">OPTIMIZATION</span></div>
 <div class="timeline"><div class="timeline-row"><div class="timeline-date">CORE EXPERTISE</div><div><h4>Website Design & Development</h4><p>Business websites and landing pages that work well on phones, tablets and desktop screens.</p></div></div><div class="timeline-row"><div class="timeline-date">E-COMMERCE</div><div><h4>WordPress, WooCommerce & Shopify</h4><p>WooCommerce and Shopify setup, product uploads, variants, collections and theme adjustments.</p></div></div><div class="timeline-row"><div class="timeline-date">ONGOING SUPPORT</div><div><h4>Optimization, SEO & Maintenance</h4><p>Website fixes, updates, SEO checks and speed improvements after launch.</p></div></div></div></div></div></div></section>
@@ -258,7 +330,9 @@ body,p,a,button,input,textarea,label,li {
     <a class="hire-button magnetic" href="#contact">TELL ME WHAT YOU NEED <span>↗</span></a>
   </div>
 </section>
-<a class="floating-messenger magnetic" href="https://m.me/abid.hasan.588630" target="_blank" rel="noopener" aria-label="Chat with Abid Hasan on Messenger"><span class="messenger-icon">✉</span><span class="messenger-text">CHAT ON MESSENGER</span></a><footer class="footer"><div class="wrap footer-inner"><a class="footer-brand" href="#home">ABID<sup class="lime">®</sup></a><span class="footer-copy">© <span id="year"></span> MD ABID HASAN. MADE WITH INTENTION.</span><a class="footer-back" href="#home">BACK TO TOP ↑</a></div></footer>
+<a class="floating-messenger magnetic" href="https://m.me/abid.hasan.588630" target="_blank" rel="noopener" aria-label="Chat with Abid Hasan on Messenger">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.914 1.455 5.513 3.73 7.212V22l3.29-1.815c.878.243 1.806.373 2.78.373 5.523 0 10-4.145 10-9.258S17.523 2 12 2Zm1.025 12.428-2.55-2.72-4.975 2.72 5.473-5.808 2.552 2.72 4.95-2.72-5.45 5.808Z" fill="currentColor"/></svg>
+</a><footer class="footer"><div class="wrap footer-inner"><a class="footer-brand" href="#home">ABID<sup class="lime">®</sup></a><span class="footer-copy">© <span id="year"></span> MD ABID HASAN. MADE WITH INTENTION.</span><a class="footer-back" href="#home">BACK TO TOP ↑</a></div></footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
