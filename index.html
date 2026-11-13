@@ -204,6 +204,241 @@ body,p,a,button,input,textarea,label,li {
 @media(max-width:900px){.hero-v7{padding-top:108px;min-height:auto}.hero-v7-title{font-size:clamp(48px,9vw,86px)}.hero-v7-intro{font-size:17px}.hero-v7-stage{min-height:560px}.orbit-one{width:330px;height:330px}.orbit-two{width:450px;height:450px}.hero-v7-center-glow{width:330px;height:330px}.hero-v7-image{max-height:560px}.orbit-logo{width:50px;height:50px}.orbit-logo i,.orbit-logo svg{font-size:22px;width:22px;height:22px}}
 @media(max-width:650px){.hero-v7{padding:96px 0 54px}.hero-v7-title{font-size:clamp(40px,13vw,60px)}.hero-v7-intro{font-size:16px;line-height:1.8}.hero-v7-actions{gap:14px;flex-wrap:wrap}.hero-v7-stage{min-height:430px}.orbit-one{width:250px;height:250px}.orbit-two{width:340px;height:340px}.hero-v7-center-glow{width:250px;height:250px}.hero-v7-image{max-height:405px}.orbit-logo{width:42px;height:42px}.orbit-logo i,.orbit-logo svg{font-size:18px;width:18px;height:18px}.orbit-logo.pos-top{top:-21px}.orbit-logo.pos-right{right:-21px}.orbit-logo.pos-bottom{bottom:-21px}.orbit-logo.pos-left{left:-21px}.floating-messenger{width:54px;height:54px;right:14px;bottom:16px}}
 
+
+/* V8: tighter hero-to-marquee transition */
+.hero-v7{
+  min-height:0;
+  padding-bottom:0;
+}
+.hero-v7-wrap{align-items:center}
+.hero-v7-right{align-self:stretch}
+.hero-v7-stage{min-height:700px}
+.hero-v7-image{align-self:flex-end}
+@media(max-width:1200px){
+  .hero-v7-stage{min-height:620px}
+}
+@media(max-width:900px){
+  .hero-v7-stage{min-height:560px}
+}
+@media(max-width:650px){
+  .hero-v7{padding-bottom:0}
+  .hero-v7-stage{min-height:405px}
+  .hero-v7-image{max-height:405px}
+}
+
+/* V8: redesigned About / Section 03 */
+.about-section{overflow:hidden}
+.about-section:before{
+  content:"";
+  position:absolute;
+  width:620px;height:620px;
+  right:-320px;top:260px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(91,111,255,.10),transparent 68%);
+  pointer-events:none;
+}
+.about-section .section-top{align-items:end;margin-bottom:52px}
+.about-section .section-title{max-width:780px}
+.about-layout{
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(300px,.78fr) minmax(0,1.22fr);
+  gap:clamp(36px,6vw,88px);
+  align-items:stretch;
+}
+.about-portrait{
+  position:relative;
+  min-height:570px;
+  margin:0;
+  overflow:hidden;
+  isolation:isolate;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:20px;
+  background:#111927;
+  box-shadow:0 28px 70px rgba(0,0,0,.28);
+}
+.about-portrait:before{
+  content:"";
+  position:absolute;inset:14px;
+  border:1px solid rgba(214,255,89,.26);
+  border-radius:13px;
+  z-index:2;pointer-events:none;
+}
+.about-portrait img{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center 17%;
+  filter:saturate(.92);
+  transition:transform .8s var(--ease);
+}
+.about-portrait:hover img{transform:scale(1.035)}
+.about-portrait-shade{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(5,8,14,.10) 0%,transparent 38%,rgba(5,8,14,.82) 100%);
+}
+.about-portrait-top{
+  position:absolute;z-index:3;top:28px;left:30px;right:30px;
+  display:flex;justify-content:space-between;gap:14px;
+  color:#e5eaf2;font:700 10px "Inter",sans-serif;
+  letter-spacing:1.1px;
+}
+.about-portrait-top span:last-child{color:var(--lime)}
+.about-portrait-caption{
+  position:absolute;z-index:3;left:30px;right:30px;bottom:30px;
+  display:flex;flex-direction:column;gap:8px;
+}
+.about-caption-name{font:800 clamp(24px,3vw,36px)/1 "Sora",sans-serif;letter-spacing:-1.4px;color:#fff}
+.about-caption-role{font:700 10px "Inter",sans-serif;letter-spacing:1.25px;color:#c2cbd8}
+.about-portrait-mark{
+  position:absolute;z-index:3;right:30px;bottom:28px;
+  font:800 48px/.9 "Sora",sans-serif;letter-spacing:-5px;color:rgba(255,255,255,.16);
+}
+.about-portrait-mark span{color:var(--lime)}
+.about-content{
+  position:relative;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:clamp(28px,4vw,54px);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:20px;
+  background:linear-gradient(145deg,rgba(20,26,38,.88),rgba(11,14,21,.96));
+  box-shadow:0 28px 70px rgba(0,0,0,.18);
+  overflow:hidden;
+}
+.about-content:after{
+  content:"";
+  position:absolute;width:280px;height:280px;right:-150px;top:-160px;
+  border-radius:50%;border:1px solid rgba(214,255,89,.15);
+  box-shadow:0 0 0 28px rgba(214,255,89,.025),0 0 0 58px rgba(214,255,89,.018);
+  pointer-events:none;
+}
+.about-content-kicker{
+  position:relative;z-index:1;
+  color:var(--lime);font:700 11px "Inter",sans-serif;
+  letter-spacing:1.35px;margin-bottom:20px;
+}
+.about-content h3{
+  position:relative;z-index:1;
+  margin:0 0 18px;
+  max-width:680px;
+  font:800 clamp(28px,3.1vw,43px)/1.12 "Sora",sans-serif;
+  letter-spacing:-.055em;color:#f4f6fa;
+}
+.about-content p{
+  position:relative;z-index:1;
+  max-width:700px;margin:0 0 14px;
+  color:#b7c0ce;font:400 15px/1.85 "Inter",sans-serif;
+}
+.about-content .about-lead{
+  color:#e1e6ef;font-size:17px;line-height:1.8;font-weight:500;
+}
+.about-capabilities{
+  position:relative;z-index:1;
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 22px;margin-top:22px;
+  border-top:1px solid rgba(255,255,255,.12);
+}
+.about-capability{
+  display:flex;align-items:center;gap:12px;
+  min-height:49px;border-bottom:1px solid rgba(255,255,255,.10);
+}
+.about-capability span{
+  color:var(--lime);font:700 10px "Inter",sans-serif;
+  letter-spacing:.5px;flex:none;
+}
+.about-capability b{
+  color:#e1e6ef;font:700 10px "Inter",sans-serif;
+  letter-spacing:.55px;
+}
+.about-expertise{position:relative;margin-top:76px}
+.about-expertise-heading{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding-bottom:18px;
+  border-bottom:1px solid var(--line);
+}
+.about-expertise-note{
+  color:#858e9d;font:600 10px "Inter",sans-serif;
+  letter-spacing:1.1px;text-align:right;
+}
+.about-expertise-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;margin-top:18px;
+}
+.expertise-card{
+  position:relative;min-height:235px;
+  padding:25px 25px 27px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:15px;
+  background:linear-gradient(145deg,#121925,#0c1018);
+  transition:transform .35s var(--ease),border-color .35s,background .35s;
+  overflow:hidden;
+}
+.expertise-card:before{
+  content:"";position:absolute;left:0;top:0;width:100%;height:2px;
+  background:linear-gradient(90deg,var(--lime),transparent 75%);
+  opacity:.75;
+}
+.expertise-card:hover{
+  transform:translateY(-7px);
+  border-color:rgba(214,255,89,.38);
+  background:linear-gradient(145deg,#17202d,#0d111a);
+}
+.expertise-number{color:#8791a1;font:700 11px "Inter",sans-serif;letter-spacing:.8px}
+.expertise-icon{
+  display:grid;place-items:center;
+  width:42px;height:42px;margin:22px 0 18px;
+  border:1px solid rgba(214,255,89,.28);
+  border-radius:12px;color:var(--lime);
+  background:rgba(214,255,89,.06);
+  font:600 21px "Inter",sans-serif;
+}
+.expertise-card h3{
+  margin:0 0 10px;color:#f0f3f8;
+  font:700 16px/1.35 "Sora",sans-serif;
+  letter-spacing:-.35px;
+}
+.expertise-card p{
+  margin:0;color:#aab4c2;
+  font:400 13px/1.75 "Inter",sans-serif;
+}
+@media(max-width:1050px){
+  .about-layout{grid-template-columns:minmax(260px,.8fr) minmax(0,1.2fr);gap:28px}
+  .about-portrait{min-height:520px}
+  .about-content{padding:30px}
+  .about-expertise{margin-top:58px}
+}
+@media(max-width:800px){
+  .about-layout{grid-template-columns:1fr;gap:24px}
+  .about-portrait{width:min(100%,480px);min-height:560px;margin:0 auto}
+  .about-content{padding:32px}
+  .about-expertise-grid{grid-template-columns:1fr 1fr}
+  .expertise-card:last-child{grid-column:1/-1}
+}
+@media(max-width:650px){
+  .about-section .section-top{margin-bottom:34px}
+  .about-layout{gap:20px}
+  .about-portrait{min-height:470px;width:100%;border-radius:16px}
+  .about-portrait:before{inset:10px;border-radius:10px}
+  .about-portrait-top{top:22px;left:22px;right:22px;font-size:9px}
+  .about-portrait-caption{left:22px;right:22px;bottom:24px}
+  .about-caption-name{font-size:28px}
+  .about-caption-role{font-size:9px;letter-spacing:.9px}
+  .about-portrait-mark{right:22px;bottom:21px;font-size:40px}
+  .about-content{padding:25px 21px;border-radius:16px}
+  .about-content-kicker{font-size:10px;line-height:1.6}
+  .about-content h3{font-size:clamp(25px,7.5vw,34px)}
+  .about-content p{font-size:14px;line-height:1.8}
+  .about-content .about-lead{font-size:15px}
+  .about-capabilities{grid-template-columns:1fr;gap:0;margin-top:16px}
+  .about-capability{min-height:44px}
+  .about-expertise{margin-top:46px}
+  .about-expertise-heading{align-items:flex-start;flex-direction:column;gap:9px}
+  .about-expertise-note{text-align:left;font-size:9px}
+  .about-expertise-grid{grid-template-columns:1fr;gap:12px}
+  .expertise-card,.expertise-card:last-child{grid-column:auto;min-height:0;padding:22px}
+  .expertise-icon{margin:17px 0 14px}
+}
+
 </style>
 </head>
 <body>
@@ -301,13 +536,72 @@ body,p,a,button,input,textarea,label,li {
 <p class="project-summary lead-copy"></p><p class="project-summary">A clean, trustworthy medical procurement site built to present categories, compliance and partner information clearly.</p><div class="project-links"><a class="project-visit single-cta" href="https://zagarx.com/" target="_blank" rel="noopener">VIEW WEBSITE ↗</a></div></article></div>
 </div></section>
 
-<section class="section" id="about"><div class="wrap">
-<div class="section-top reveal"><div><div class="section-num">03 — WHY CLIENTS WORK WITH ME</div><h2 class="section-title">PRACTICAL WEB<br>SOLUTIONS <span class="muted">WITH STYLE.</span></h2></div><p class="section-aside">I combine design sense, development skills and practical business thinking to build websites people can trust.</p></div>
-<div class="about-grid">
-<div class="about-photo-box reveal"><img class="about-photo" src="assets/abid-hasan-studio.png" alt="Professional portrait of Md Abid Hasan"><span class="about-photo-tag">MD ABID HASAN / 2026</span></div>
-<div class="about-copy reveal"><p class="lead">I like websites that look good, feel simple to use and make everyday work easier.</p><p>I work with businesses that need a new website, a better online store or help sorting out a site they already have.</p><p>My work includes WordPress, WooCommerce, Shopify and custom websites, along with product uploads, SEO, bug fixing and website maintenance.</p><p>I keep the process straightforward, explain what needs to be done and build sites that are easy for you to update and manage.</p>
-<div class="skill-cloud"><span class="skill-chip">WORDPRESS</span><span class="skill-chip">SHOPIFY</span><span class="skill-chip">WOOCOMMERCE</span><span class="skill-chip">CUSTOM DEVELOPMENT</span><span class="skill-chip">FRONT-END</span><span class="skill-chip">BACK-END</span><span class="skill-chip">API INTEGRATION</span><span class="skill-chip">SEO</span><span class="skill-chip">WEBSITE SECURITY</span><span class="skill-chip">DATABASES</span><span class="skill-chip">WEB HOSTING</span><span class="skill-chip">OPTIMIZATION</span></div>
-<div class="timeline"><div class="timeline-row"><div class="timeline-date">CORE EXPERTISE</div><div><h4>Website Design & Development</h4><p>Business websites and landing pages that work well on phones, tablets and desktop screens.</p></div></div><div class="timeline-row"><div class="timeline-date">E-COMMERCE</div><div><h4>WordPress, WooCommerce & Shopify</h4><p>WooCommerce and Shopify setup, product uploads, variants, collections and theme adjustments.</p></div></div><div class="timeline-row"><div class="timeline-date">ONGOING SUPPORT</div><div><h4>Optimization, SEO & Maintenance</h4><p>Website fixes, updates, SEO checks and speed improvements after launch.</p></div></div></div></div></div></div></section>
+<section class="section about-section" id="about"><div class="wrap">
+  <div class="section-top reveal">
+    <div>
+      <div class="section-num">03 — ABOUT MY WORK</div>
+      <h2 class="section-title">THOUGHTFUL DESIGN.<br><span class="muted">PRACTICAL</span> DEVELOPMENT.</h2>
+    </div>
+    <p class="section-aside">I build websites around the people who use them and the businesses that rely on them — with clear design, dependable functionality and room to grow.</p>
+  </div>
+
+  <div class="about-layout">
+    <figure class="about-portrait reveal">
+      <img src="assets/abid-hasan-studio.png" alt="Professional portrait of Md Abid Hasan">
+      <div class="about-portrait-shade"></div>
+      <div class="about-portrait-top"><span>INDEPENDENT WEB DEVELOPER</span><span>01 / 03</span></div>
+      <figcaption class="about-portrait-caption">
+        <span class="about-caption-name">MD ABID HASAN</span>
+        <span class="about-caption-role">WORDPRESS · SHOPIFY · CUSTOM WEB</span>
+      </figcaption>
+      <span class="about-portrait-mark" aria-hidden="true">A<span>.</span></span>
+    </figure>
+
+    <div class="about-content reveal">
+      <span class="about-content-kicker">A PRACTICAL APPROACH TO WEB DEVELOPMENT</span>
+      <h3>GOOD WEBSITES SHOULD DO MORE THAN LOOK GOOD.</h3>
+      <p class="about-lead">They should make it easier for customers to understand your business, find what they need and take the next step.</p>
+      <p>I work with businesses that need a new website, a better online store or help improving a site they already have. I focus on clean layouts, useful features and a smooth experience across desktop and mobile.</p>
+      <p>From the first page layout to launch-day fixes, I keep the work organised and explain the choices that affect your website.</p>
+
+      <div class="about-capabilities" aria-label="Core capabilities">
+        <div class="about-capability"><span>01</span><b>WORDPRESS & WOOCOMMERCE</b></div>
+        <div class="about-capability"><span>02</span><b>SHOPIFY STORES</b></div>
+        <div class="about-capability"><span>03</span><b>CUSTOM DEVELOPMENT</b></div>
+        <div class="about-capability"><span>04</span><b>API INTEGRATION</b></div>
+        <div class="about-capability"><span>05</span><b>SEO & OPTIMIZATION</b></div>
+        <div class="about-capability"><span>06</span><b>MAINTENANCE & SUPPORT</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-expertise">
+    <div class="about-expertise-heading">
+      <span class="section-num">WHERE I CAN HELP</span>
+      <span class="about-expertise-note">FROM FIRST BUILD TO ONGOING SUPPORT</span>
+    </div>
+    <div class="about-expertise-grid">
+      <article class="expertise-card reveal">
+        <span class="expertise-number">01</span>
+        <div class="expertise-icon" aria-hidden="true">↗</div>
+        <h3>WEBSITE DESIGN & DEVELOPMENT</h3>
+        <p>Business websites and landing pages designed to work smoothly on phones, tablets and desktop screens.</p>
+      </article>
+      <article class="expertise-card reveal">
+        <span class="expertise-number">02</span>
+        <div class="expertise-icon" aria-hidden="true">⌘</div>
+        <h3>E-COMMERCE & ONLINE STORES</h3>
+        <p>WooCommerce and Shopify setup, product uploads, variants, collections and practical theme adjustments.</p>
+      </article>
+      <article class="expertise-card reveal">
+        <span class="expertise-number">03</span>
+        <div class="expertise-icon" aria-hidden="true">＋</div>
+        <h3>OPTIMIZATION & SUPPORT</h3>
+        <p>Website fixes, content updates, SEO checks, speed improvements and maintenance after launch.</p>
+      </article>
+    </div>
+  </div>
+</div></section>
 
 <section class="section process" id="process"><div class="wrap">
 <div class="section-top reveal"><div><div class="section-num">04 — MY WORKING PROCESS</div><h2 class="section-title">A CLEAR PLAN.<br>A SOLID <span class="muted">BUILD.</span></h2></div><p class="section-aside">You will know what I am working on, what I need from you and what happens next.</p></div>

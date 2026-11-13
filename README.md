@@ -1,20 +1,9 @@
-# Abid Hasan — Portfolio V5
+# Abid Hasan — Portfolio V8
 
-## What changed in V5
-- Rebuilt the hero section around Abid Hasan's transparent portrait.
-- Added floating technology badges around the hero image.
-- Enlarged homepage messaging and kept the dark premium direction.
-- Replaced demo projects with six real live websites and their full-page screenshots.
-- Added direct live links for each project.
-- Added a floating Messenger button using `https://m.me/abid.hasan.588630`.
-- Kept the direct contact form submission setup for `abidbest21@gmail.com`.
+## V8 Updates
+- Removed the unused space below the hero portrait so the expertise marquee sits directly beneath the image on desktop and mobile.
+- Redesigned Section 03 (About) with a premium portrait panel, clearer project approach copy, organized capability list, and three responsive expertise cards.
+- Kept the existing live project links, Messenger contact link, and all original portfolio assets.
 
-## Included assets
-- Transparent profile image in `assets/abid-hasan-original.png`
-- Six real project screenshots in the `assets` folder
-
-## Update on GitHub
-Upload the contents of this folder to your `abidhasandev.github.io` repository and replace the old files.
-
-## Contact form note
-The form uses FormSubmit AJAX. After publishing, submit one test message and confirm/activate the FormSubmit email if they send an activation email to `abidbest21@gmail.com`.
+## GitHub update
+Extract this ZIP and upload `index.html`, `README.md`, and the complete `assets` folder to the root of your existing GitHub repository, replacing the previous versions.
