@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<noscript><style>.works-grid .project{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -40,33 +41,126 @@
     <a class="back" href="index.html#work">← Back to home</a>
     <h1 class="page-title">Previous <em>works.</em></h1>
     <p class="page-sub">A growing collection of websites I have built for clients across different industries. Hover a card to preview the full page, then open the live website.</p>
-    <div class="works-count"><b>40+</b> websites built · more added soon</div>
+    <div class="works-count"><b>80+</b> websites built · more added soon</div>
   </div>
 </section>
 
-<section class="wrap">
+<section class="wrap works-list">
   <!--
     HOW TO ADD A NEW WORK
     Copy one whole <article class="project reveal"> ... </article> block below, paste it
     at the end of the grid (just before the closing </div>), then change:
       1. the screenshot file in assets/ (img src + alt)
       2. the domain text inside <span> in .shot-top
-      3. the tag, title, description and the website link
+      3. the title, category, link URL and link label
     Tip: save the full-page screenshot as .webp to keep the page fast.
   -->
-  <div class="projects works-grid">
-    <article class="project reveal"><div class="shot" data-cursor="Scroll<br>preview"><div class="shot-top"><i></i><i></i><i></i><span>canadianpeptidesolutions.com</span></div><div class="shot-page"><img src="assets/canadian-peptides.webp" alt="Full-page screenshot of Canadian Peptides Solutions" loading="lazy"></div></div>
-      <div class="project-info"><div class="project-tag">E-commerce</div><h3>Canadian Peptides Solutions</h3><p>A product-focused e-commerce website with a clean catalog layout, informational content blocks and trust-building visuals.</p><a class="visit" href="https://canadianpeptidesolutions.com/" target="_blank" rel="noopener">View website <span>↗</span></a></div></article>
-    <article class="project reveal"><div class="shot" data-cursor="Scroll<br>preview"><div class="shot-top"><i></i><i></i><i></i><span>dynamixscaffold.com</span></div><div class="shot-page"><img src="assets/dynamix-scaffold.webp" alt="Full-page screenshot of Dynamix Scaffold Group" loading="lazy"></div></div>
-      <div class="project-info"><div class="project-tag">Corporate</div><h3>Dynamix Scaffold Group</h3><p>A bold corporate website for a scaffold and access solutions company, with strong service hierarchy and lead-focused sections.</p><a class="visit" href="https://dynamixscaffold.com/" target="_blank" rel="noopener">View website <span>↗</span></a></div></article>
-    <article class="project reveal"><div class="shot" data-cursor="Scroll<br>preview"><div class="shot-top"><i></i><i></i><i></i><span>lifestylesexp.com</span></div><div class="shot-page"><img src="assets/lifestyles-experience.webp" alt="Full-page screenshot of Lifestyles Experience" loading="lazy"></div></div>
-      <div class="project-info"><div class="project-tag">Luxury booking</div><h3>Lifestyles Experience</h3><p>A dark luxury website experience designed to highlight premium transport services and communicate exclusivity.</p><a class="visit" href="https://lifestylesexp.com/" target="_blank" rel="noopener">View website <span>↗</span></a></div></article>
-    <article class="project reveal"><div class="shot" data-cursor="Scroll<br>preview"><div class="shot-top"><i></i><i></i><i></i><span>wekleenllc.com</span></div><div class="shot-page"><img src="assets/we-kleen.webp" alt="Full-page screenshot of We Kleen" loading="lazy"></div></div>
-      <div class="project-info"><div class="project-tag">Service business</div><h3>We Kleen</h3><p>A trust-focused service website with a strong brand tone, clear process explanation and multiple conversion points.</p><a class="visit" href="https://wekleenllc.com/" target="_blank" rel="noopener">View website <span>↗</span></a></div></article>
-    <article class="project reveal"><div class="shot" data-cursor="Scroll<br>preview"><div class="shot-top"><i></i><i></i><i></i><span>conmas.us</span></div><div class="shot-page"><img src="assets/conmas.webp" alt="Full-page screenshot of Conmas" loading="lazy"></div></div>
-      <div class="project-info"><div class="project-tag">Creative brand</div><h3>Conmas</h3><p>A visually rich creative website with strong atmosphere, content sections and an immersive entertainment brand identity.</p><a class="visit" href="https://conmas.us/" target="_blank" rel="noopener">View website <span>↗</span></a></div></article>
-    <article class="project reveal"><div class="shot" data-cursor="Scroll<br>preview"><div class="shot-top"><i></i><i></i><i></i><span>zagarx.com</span></div><div class="shot-page"><img src="assets/zagarx.webp" alt="Full-page screenshot of Zagarx" loading="lazy"></div></div>
-      <div class="project-info"><div class="project-tag">Medical procurement</div><h3>Zagarx</h3><p>A clean, trustworthy medical procurement site built to present categories, compliance and partner information clearly.</p><a class="visit" href="https://zagarx.com/" target="_blank" rel="noopener">View website <span>↗</span></a></div></article>
+  <div class="projects works-grid" id="works-grid">
+    <article class="project reveal">
+      <a class="project-link" href="https://canadianpeptidesolutions.com/" target="_blank" rel="noopener" aria-label="View website for Canadian Peptides Solutions">
+        <div class="shot" data-cursor="Scroll<br>preview"><div class="shot-top"><i></i><i></i><i></i><span>canadianpeptidesolutions.com</span></div><div class="shot-page"><img src="assets/canadian-peptides.webp" alt="Full-page screenshot of Canadian Peptides Solutions" loading="lazy"></div></div>
+        <div class="project-info">
+          <h3>Canadian Peptides Solutions</h3>
+          <div class="project-footer">
+            <span class="project-category">E-commerce</span>
+            <span class="visit">View website <span>↗</span></span>
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="project reveal">
+      <a class="project-link" href="https://dynamixscaffold.com/" target="_blank" rel="noopener" aria-label="View website for Dynamix Scaffold Group">
+        <div class="shot" data-cursor="Scroll<br>preview"><div class="shot-top"><i></i><i></i><i></i><span>dynamixscaffold.com</span></div><div class="shot-page"><img src="assets/dynamix-scaffold.webp" alt="Full-page screenshot of Dynamix Scaffold Group" loading="lazy"></div></div>
+        <div class="project-info">
+          <h3>Dynamix Scaffold Group</h3>
+          <div class="project-footer">
+            <span class="project-category">Corporate</span>
+            <span class="visit">View website <span>↗</span></span>
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="project reveal">
+      <a class="project-link" href="https://lifestylesexp.com/" target="_blank" rel="noopener" aria-label="View website for Lifestyles Experience">
+        <div class="shot" data-cursor="Scroll<br>preview"><div class="shot-top"><i></i><i></i><i></i><span>lifestylesexp.com</span></div><div class="shot-page"><img src="assets/lifestyles-experience.webp" alt="Full-page screenshot of Lifestyles Experience" loading="lazy"></div></div>
+        <div class="project-info">
+          <h3>Lifestyles Experience</h3>
+          <div class="project-footer">
+            <span class="project-category">Luxury booking</span>
+            <span class="visit">View website <span>↗</span></span>
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="project reveal">
+      <a class="project-link" href="https://wekleenllc.com/" target="_blank" rel="noopener" aria-label="View website for We Kleen">
+        <div class="shot" data-cursor="Scroll<br>preview"><div class="shot-top"><i></i><i></i><i></i><span>wekleenllc.com</span></div><div class="shot-page"><img src="assets/we-kleen.webp" alt="Full-page screenshot of We Kleen" loading="lazy"></div></div>
+        <div class="project-info">
+          <h3>We Kleen</h3>
+          <div class="project-footer">
+            <span class="project-category">Service business</span>
+            <span class="visit">View website <span>↗</span></span>
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="project reveal">
+      <a class="project-link" href="https://conmas.us/" target="_blank" rel="noopener" aria-label="View website for Conmas">
+        <div class="shot" data-cursor="Scroll<br>preview"><div class="shot-top"><i></i><i></i><i></i><span>conmas.us</span></div><div class="shot-page"><img src="assets/conmas.webp" alt="Full-page screenshot of Conmas" loading="lazy"></div></div>
+        <div class="project-info">
+          <h3>Conmas</h3>
+          <div class="project-footer">
+            <span class="project-category">Creative brand</span>
+            <span class="visit">View website <span>↗</span></span>
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="project reveal">
+      <a class="project-link" href="https://zagarx.com/" target="_blank" rel="noopener" aria-label="View website for Zagarx">
+        <div class="shot" data-cursor="Scroll<br>preview"><div class="shot-top"><i></i><i></i><i></i><span>zagarx.com</span></div><div class="shot-page"><img src="assets/zagarx.webp" alt="Full-page screenshot of Zagarx" loading="lazy"></div></div>
+        <div class="project-info">
+          <h3>Zagarx</h3>
+          <div class="project-footer">
+            <span class="project-category">Medical procurement</span>
+            <span class="visit">View website <span>↗</span></span>
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="project reveal">
+      <a class="project-link" href="https://whipmysoul.com/" target="_blank" rel="noopener" aria-label="View website for Whip My Soul">
+        <div class="shot" data-cursor="Scroll<br>preview">
+        <div class="shot-top"><i></i><i></i><i></i><span>whipmysoul.com</span></div>
+        <div class="shot-page"><img src="assets/whip-my-soul.webp" alt="Full-page screenshot of Whip My Soul" loading="lazy"></div>
+      </div>
+        <div class="project-info">
+          <h3>Whip My Soul</h3>
+          <div class="project-footer">
+            <span class="project-category">Restaurant</span>
+            <span class="visit">View website <span>↗</span></span>
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="project reveal">
+      <a class="project-link" href="https://ambrnyc.com/" target="_blank" rel="noopener" aria-label="View website for Am Building Restoration">
+        <div class="shot" data-cursor="Scroll<br>preview">
+        <div class="shot-top"><i></i><i></i><i></i><span>ambrnyc.com</span></div>
+        <div class="shot-page"><img src="assets/am-building-restoration.webp" alt="Full-page screenshot of Am Building Restoration" loading="lazy"></div>
+      </div>
+        <div class="project-info">
+          <h3>Am Building Restoration</h3>
+          <div class="project-footer">
+            <span class="project-category">Building restoration</span>
+            <span class="visit">View website <span>↗</span></span>
+          </div>
+        </div>
+      </a>
+    </article>
+  </div>
+  <div class="works-end" id="works-end" hidden>
+    <button class="btn btn-ghost" id="load-more" type="button" aria-controls="works-grid">Load more</button>
   </div>
 </section>
 </main>
@@ -93,7 +187,26 @@ addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>20);const
 const nl=$('#navLinks'),mb=$('#menuBtn');
 mb.addEventListener('click',()=>{const o=nl.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
-$$('.reveal').forEach(el=>io.observe(el));
+const works = $$('#works-grid > .project');
+const batchSize = 4;
+const loadMore = $('#load-more');
+const loadMoreRow = $('#works-end');
+let shown = batchSize;
+
+works.slice(shown).forEach(project => { project.hidden = true; });
+loadMoreRow.hidden = shown >= works.length;
+$$('.reveal:not([hidden])').forEach(el=>io.observe(el));
+
+loadMore.addEventListener('click', () => {
+  const batch = works.slice(shown, shown + batchSize);
+  for (const project of batch) {
+    project.hidden = false;
+    io.observe(project);
+  }
+  shown += batch.length;
+  if (shown >= works.length) loadMoreRow.hidden = true;
+  batch[0]?.querySelector('.project-link').focus();
+});
 if(matchMedia('(pointer:fine)').matches&&!reduce){
   const c=$('#cursor'),ring=$('#ring'),lab=$('#clabel');let mx=0,my=0,rx=0,ry=0;
   c.style.opacity=ring.style.opacity=1;
