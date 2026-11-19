@@ -19,8 +19,13 @@ Extract this ZIP and upload `index.html`, `README.md` and the complete `assets` 
 - Section 03 capability list now matches the 8 services. "Tools I build with" removed.
 - Footer icons (LinkedIn, Facebook, WhatsApp, Email) use the supplied logos. Experience typo fixed: Tech Maximus.
 
+## Current portfolio update
+- The home page shows eight projects in a four-column desktop grid. Previous Works initially shows four, with a Load more button for the next four.
+- Whip My Soul and Am Building Restoration include local WebP previews and links to their live websites.
+- The hero uses the new portrait and a larger frosted-glass experience badge.
+
 ## Adding more works
-Open `works.html`, copy one `<article class="project reveal">` block, paste it at the end of the grid and change the screenshot, domain, title, description and link.
+Copy a complete project article in `works.html` and change its screenshot, domain, title, category and link. Add the same card in `index.html` when the project should also appear on the home page.
 
 ## Files to upload to GitHub
 `index.html`, `works.html`, `README.md` and the whole `assets` folder (it now includes `style.css` and `social/`).
